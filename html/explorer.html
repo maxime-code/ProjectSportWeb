@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Explorer</title>
+    <link rel="stylesheet" href="../css/explorer.css">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid" style="border-bottom: 1px solid black;">
+            <a class="navbar-brand" href="../php/deconnexion.php">
+                <!-- add an icon -->
+                <img src="" alt="">
+                MatchBook
+            </a>
+            <a href="#" class="link-navbar">Explorer</a>
+            <a href="organiser.html" class="link-navbar">Organiser</a>
+            <button class="btn" type="button" id="notif" data-bs-toggle="modal" data-bs-target="#modal"><img src="../resources/notif.png" alt="" width="30px" height="30px" id="notif"></button>
+            <a href="profil.html" class="link-navbar">Profil</a>
+        </div>
+    </nav>
+    <br>
+    <!-- Notifications apparaissent quand on clique sur la cloche -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color: #4d797f">Notification</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="notification1" style="color: #4d797f; font-weight: bold;">
+
+                    </div>
+                    <div id="notification" style="color: #4d797f; font-weight: bold;">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Détails des matchs quand on fait une recherche -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color: #4d797f">Détails sur le match</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="details" style="color: #4d797f; font-weight: bold;">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row" id="areaName">
+            <!-- afficher le nom de l'utilisateur -->
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Prochains matchs</h1>
+                <div id="insert-next-matchs">
+                    <!-- inséré dynamiquement en ajax -->
+                </div>
+                <h1>Matchs passés</h1>
+                <div id="insert-previous-matchs">
+                    <!-- inséré dynamiquement en ajax -->
+                </div>
+            </div>
+            <div class="col">
+                <form action="#" method="get" id="form">
+                    <h1>Rechercher un match</h1>
+                    <select name="villes" id="ville">
+                        <!-- les options sont ajoutées dynamiquement par ajax -->
+                    </select>
+
+                    <select name="sports" id="sport">
+                        <!-- les options sont ajoutées dynamiquement par ajax -->
+                    </select><br>
+                    <h3>Par période</h3>
+                    <input type="radio" name="time" value="7" id="time1">
+                    <span class="span">+ de 7 jours</span><br>
+                    <input type="radio" name="time" value="15" id="time2">
+                    <span class="span">+ de 15 jours</span><br>
+                    <input type="radio" name="time" value="30" id="time3">
+                    <span class="span">+ de 30 jours</span><br>
+                    <h3>Complet :</h3>
+                    <input type="radio" name="comp" value="oui" id="oui">
+                    <span class="span">Oui</span><br>
+                    <input type="radio" name="comp" value="non" id="non">
+                    <span class="span">Non</span><br>
+                    <input type="submit" name="submit" value="Rechercher">
+                </form>
+                <br>
+                <div id="insert-matchs-request">
+                    <div id="insert">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="../js/ajax.js" defer></script>
+    <script src="../js/explorer.js" defer></script>
+    <!-- <script src="../js/explorer.js" defer></script> -->
+</body>
+
+</html>

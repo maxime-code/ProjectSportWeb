@@ -1,0 +1,53 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+.link-navbar, .link-navbar:hover{
+    font-family: 'Roboto', 'sans-serif';
+    color:#DF7861;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar-brand, .navbar-brand:hover{
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
+    color:#4d797f;
+}
+.card-body{
+    background-color: #DF7861;
+}
+.card body .card-text{
+    color:#FCF8E8;
+    font-weight: bold;
+}
+.card-footer{
+    background-color: #FCF8E8;
+}
+.card-footer .card-text{
+    color:#DF7861;
+    font-weight: bold;
+}
+body h3, body h1{
+    color: #4d797f;
+}
+select option{
+    color:#DF7861;
+    font-weight: bold;
+    border-color: #FCF8E8;
+}
+select{
+    background-color: #FCF8E8;
+    color:#DF7861;
+    font-weight: bold;
+    border-color: black;
+}
+.span, body h5{
+    color:#DF7861;
+    font-weight: bold;
+}
+input[type="submit"]{
+    background-color: #DF7861;
+    border: 1px solid #DF7861;
+    color:#FCF8E8;
+    padding: 7px;
+    border-radius: 5px;
+}

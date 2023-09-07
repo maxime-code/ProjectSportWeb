@@ -1,0 +1,39 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+.navbar-brand, .navbar-brand:hover{
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
+    color:#4d797f;
+}
+
+.container h1{
+    color:#4d797f;
+    text-align: center;
+    margin-bottom: 50px;
+}
+label{
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
+    color:#DF7861;
+}
+.container .btn, .container .btn:hover{
+    background-color: #DF7861;
+    border-color: #DF7861;
+}
+input[type="submit"]{
+    background-color: #DF7861;
+    border: 1px solid #DF7861;
+    color:#FCF8E8;
+    padding: 7px;
+    border-radius: 5px;
+}
+#errors{
+    background-color: #FCF8E8;
+    border: 1px solid #FCF8E8;
+    color:#DF7861;
+    text-align: center;
+    padding: 3px;
+    margin-top: 20px;
+    font-weight: bold;
+}

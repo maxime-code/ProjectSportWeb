@@ -1,0 +1,72 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+.link-navbar, .link-navbar:hover{
+    font-family: 'Roboto', 'sans-serif';
+    color:#DF7861;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar-brand, .navbar-brand:hover{
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
+    color:#4d797f;
+}
+
+body h1{
+    color:#4d797f;
+}
+.accordion .accordion-item{
+    background-color: #FCF8E8;
+}
+.accordion .accordion-item .accordion-button{
+    color:#DF7861;
+    font-weight: bold;
+}
+form .btn, form .btn:hover{
+    background-color: #DF7861;
+    border-color: #DF7861;
+}
+.btn-group .btn-warning, .btn-group .btn-warning:hover{
+    background-color: #ECB390;
+    border-color: #ECB390;
+    color: #fff;
+}
+.btn-group .btn-danger, .btn-group .btn-danger:hover{
+    background-color: #DF7861;
+    border-color: #DF7861;
+    color: #fff;
+}
+.btn-group .btn-success, .btn-group .btn-success:hover{
+    background-color: #94B49F;
+    border-color: #94B49F;
+    color: #fff;
+}
+.card-body, .card-body{
+    background-color: #DF7861;
+}
+.card-body h3, .card-body p{
+    color:#FCF8E8;
+    font-weight: bold;
+}
+.card .card-footer{
+    background-color: #FCF8E8;
+}
+.card-footer .btn, .card-footer .btn:hover{
+    background-color: #FCF8E8;
+    color:#DF7861;
+    font-weight: bold;
+    border: none;
+}
+input[type="submit"]{
+    background-color: #DF7861;
+    border: none;
+    color:#fff;
+    padding:7px;
+    border-radius: 5px;
+}
+#matchsPasses{
+    color:#DF7861;
+    font-weight: bold;
+    font-size: 25px;
+}

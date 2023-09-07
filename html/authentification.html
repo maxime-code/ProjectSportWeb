@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Authentification</title>
+    <link href="../css/authentification.css" rel="stylesheet">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <!-- add an icon -->
+                <img src="" alt="">
+                MatchBook
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Connexion</h1>
+        <form action="authentification.php" method="post" class="row g-3" id="form">
+            <div class="mb-3">
+                <label for="" class="form-label">E-mail</label>
+                <input type="email" class="form-control" name="email" id="mail" required>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Mot de passe</label>
+                <input type="password" class="form-control" name="password" id="pass" required>
+            </div>
+            <input type="submit" value="Se connecter" name="submit">
+        </form>
+        <br>
+        <h3>Pas de compte? Créez-en <a href="inscription.html">un</a>!</h3>
+    </div>
+    <section id="errors" class="container alert alert-warning" style="display: none">
+        <!-- insert errors -->
+    </section>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/authentification.js"></script>
+</body>
+</html>

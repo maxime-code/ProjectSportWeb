@@ -1,0 +1,53 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+.link-navbar, .link-navbar:hover{
+    font-family: 'Roboto', 'sans-serif';
+    color:#DF7861;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar-brand, .navbar-brand:hover{
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
+    color:#4d797f;
+}
+
+
+
+label{
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
+    color:  #DF7861;
+}
+.submit-create-match, .submit-create-match:hover{
+    background-color: #DF7861;
+    border: #DF7861 1px solid;
+    color:#FCF8E8;
+    padding: 7px;
+    border-radius: 5px;
+}
+.submit-stats, .submit-stats:hover{
+    background-color: #DF7861;
+    border: #DF7861 1px solid;
+    color:#FCF8E8;
+    padding: 7px;
+    border-radius: 5px;
+}
+h1{
+    color:#4d797f;
+}
+.card-body{
+    background-color: #DF7861;
+    color:#FCF8E8;
+    font-weight: bold;
+}
+.card-footer{
+    background-color: #FCF8E8;
+}
+.card-footer .btn{
+    background-color: #FCF8E8;
+    color: #DF7861;
+    font-weight: bold;
+    border:none;
+}

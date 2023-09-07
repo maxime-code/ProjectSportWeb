@@ -1,0 +1,2 @@
+INSERT INTO match(sport,nb_joueurs,nb_joueurs_min,nb_joueurs_max,date_debut,date_fin, adresse, prix, id_villes, id_player, complet) 
+    VALUES ('test', 0, 0,0, '2022-05-05 1:00', '2022-05-05 3:00', 'nantes', 0, 2, 5, false);

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Organiser</title>
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/organiser.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar" style="border-bottom: 1px solid black;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../php/deconnexion.php">
+                <!-- add an icon -->
+                <img src="" alt="">
+                MatchBook
+            </a>
+            <a href="explorer.html" class="link-navbar">Explorer</a>
+            <a href="#" class="link-navbar">Organiser</a>
+            <a href="profil.html" class="link-navbar">Profil</a>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Créer un match</h1>
+                <!-- FORM -->
+                <form action="" method="get" id="form">
+                    <div class="row">
+                        <label for="" class="text-center">Type</label>
+                        <input type="text" class="form-control" placeholder="Football, basketball,..." id="sport"
+                            required>
+                    </div>
+                    <div class="row">
+                        <label for="" class="text-center">Nombre de joueurs</label>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Min" id="min" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Max" id="max" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="" class="text-center">Ville</label>
+                        <input type="text" class="form-control" id="ville" required>
+                    </div>
+                    <div class="row">
+                        <label for="" class="text-center">Adresse</label>
+                        <input type="text" class="form-control" id="adresse" required>
+                    </div>
+                    <div class="row">
+                        <label for="" class="text-center">Date</label>
+                        <input type="datetime-local" class="form-control" id="heure" required>
+                    </div>
+                    <div class="row">
+                        <label for="" class="text-center">Durée</label>
+                        <input type="time" class="form-control" id="duree" required>
+                    </div>
+                    <div class="row">
+                        <label for="" class="text-center">Prix</label>
+                        <input type="text" class="form-control" id="prix" required>
+                    </div>
+                    <div class="row">
+                        <input type="submit" class="submit-create-match" value="Créer" id="submit">
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <h1>Saisir le meilleur joueur et le score de mes anciens matchs</h1>
+                    <div id="insert-previous-matchs">
+                        <!-- inséré dynamiquement en ajax -->
+                    </div>
+                    <div class="col">
+                        <!-- <h1>Saisie des statistiques</h1>
+                    <form action="#" method="get" id="tost">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Score">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Meilleur joueur">
+                            </div>
+                            <div class="col">
+                                <input type="submit" class="submit-stats" value="Enregistrer">
+                            </div>
+                        </div>
+                    </form>
+                </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="insert-previous-matchs"></div> -->
+            <script src="../js/ajax.js"></script>
+            <script src="../js/organiser.js"></script>
+</body>
+
+</html>
